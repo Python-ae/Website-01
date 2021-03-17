@@ -4,6 +4,10 @@
 #Use This to Add a new page
 https://www.youtube.com/watch?v=QyFcl_Fba-k
 
-## Make a new branch "site"
+## To Make a new branch "site"
 
 git checkout -b site
+
+## To work on with existed branch
+
+git checkout site
