@@ -11,6 +11,8 @@ body{
 
 /* Nav */
 .main-nav{
+	text-shadow: 2px 2px 4px #808080;
+	font-style: italic;
 	color: honeydew;
 	display: flex;
 	justify-content: center;
@@ -48,14 +50,42 @@ li:hover{
 	cursor: pointer;
 
 }
-
+/* to push Contacts to the right  in the Nav  */
 .push{
 	border: solid 1px white;
 	border-radius: 5px;
 	margin-left: auto;
-	margin-right: 20px
+	margin-right: 20px;
 }
 
+/* MIDDLE Flex Container */
+.flex-container {
+	min-height: 80vh;
+	display: flex;
+	margin: 0em 2em;
+	height: fit-content;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid red ;
+	
+}
+.box{
+
+	text-align: center;
+	width: 7em;
+	font-size: 3em;
+	padding: 1em 1em;
+	margin: 10px .5em;
+	transform: skew(-11.5deg);
+	color: rgb(239, 255, 240);
+	text-shadow: 2px 2px 6px #808080;
+	background-color: rgb(0, 182, 0);
+	border-left: 50px solid rgb(239, 255, 240) ;
+	border-bottom: 25px solid rgb(239, 255, 240) ;
+	box-shadow: inset 2px 2px 16px #808080;
+}
 
 @media screen and (max-width: 600px) {
 	.main-nav{
@@ -67,72 +97,32 @@ li:hover{
 	}
 }
 
-/* Cover */
-.container-main{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	/*height: 100vh;*/
-
-	text-align: center;
-	font-style: italic;
-	box-shadow: rgb(19 15 235 / 7%) 0px -10px 15px -5px;
-}
 
 h1{
-	width: -webkit-fill-available;
+	font-style: italic;
 	color: honeydew;
 	text-align: center;
 	background: #2e5827;
 	font-size: 50px;
 	font-weight: 500;
-}
-
-.lower-section{
-	/*position: relative;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: solid #1a3b0db8;
-	height: 300px;
-	padding: 0px 20px;
-	margin: 5px 25px;
-	font-size: 35px;
-	font-weight: 100;
-}
-
-.child{
-	text-align: center;
-}
-
-.lower-inner-a{
-	font-size: 1.7em;
-	margin: 0;
-	padding: 0;
-	/*background: red;*/
-	
-}
-.lower-inner-2{
-
+	/* width: -webkit-fill-available; */
 }
 
 
 /*buffer section*/
-.buffer {
+/* .buffer {
 	margin: 10px;
 	margin-bottom: 0px;
 	opacity: 0;
 	height: 50vh;
-}
+} */
 
 /* Footer */
 footer{
 	color: #1a3b0db8;
 	margin-top: 1px;
 	margin-bottom: 10px;
-
+	height: 100px;
 	/* For centering the footer */
 	/*position: absolute;*/
 	/*bottom: 1%;*/
@@ -140,13 +130,11 @@ footer{
 	/*transform: translate(-50%, -50%);*/
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 }
 .footer-child{
-	margin-top: 1px
-	font-size: 2.0em;
-	position: absolute;
-	bottom: 30px;
+	margin-top: 1px;
+	font-size: 1.5em;
 }
 
 .faas {
