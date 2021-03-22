@@ -11,3 +11,7 @@ git checkout -b site
 ## To work on with existed branch
 
 git checkout site
+
+## More on branching
+    https://www.nobledesktop.com/learn/git/git-branches
+    https://careerkarma.com/blog/git-fatal-origin-does-not-appear-to-be-a-git-repository/
